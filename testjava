@@ -1,0 +1,14 @@
+package com.dbs.util;
+
+import java.io.PrintWriter;
+import java.io.StringWriter;
+
+public class Utility {
+
+	public String printStackTrace(Exception e){
+		StringWriter sw = new java.io.StringWriter();
+		e.printStackTrace(new PrintWriter(sw));
+		return sw.toString();
+	}
+	
+}
