@@ -8,7 +8,7 @@ public class Utility {
 	public String printStackTrace(Exception e){
 		StringWriter sw = new java.io.StringWriter();
 		e.printStackTrace(new PrintWriter(sw));
-		return sw.toString();
+		/*return sw.toString();*/
 	}
 	
 }
